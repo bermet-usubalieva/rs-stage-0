@@ -1,0 +1,1777 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.wraper {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: clip;
+    width: 100%;
+    position: relative;
+}
+
+
+.header {
+    background-color: #0C0C0E;
+    margin-bottom: -1px;
+    min-height: 90px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 31px;
+}
+
+.header-title {
+    font-family: 'Forum';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.header-nav {
+    margin-right: 10px;
+}
+
+.header-nav__ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-header__li {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.nav-header__li__link:hover {
+    color: #BB945F;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.user-link {
+    margin-right: -11px;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-color: black;
+    border: none;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+}
+
+.header__profile_icon:hover {
+    color: #BB945F;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.welcome {
+    background-image: url(assets/img/welcome-1440.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    padding-top: 220px;
+    padding-bottom: 160px;
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+.wrap-h1 {
+    background-color: #0C0C0E;
+    text-align: center;
+    width: 600px;
+    height: 220px;
+    padding: 35px 40px;
+}
+
+.welcome-title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Forum';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.about {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.about-h2,
+.favorites-h2,
+.coffee-h2,
+.contacts-h2,
+.library-h2 {
+    color: #0C0C0E;
+    font-family: 'Forum';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.line {
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #0C0C0E;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.about-p {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+
+.about-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-wrap-img {
+    max-width: 1400px;
+    overflow: hidden;
+}
+
+.first {
+    width: 450px;
+    height: 560px;
+}
+
+.wrap-img-mobile {
+    display: none;
+}
+
+.slider-line {
+    display: flex;
+    position: relative;
+    left: 0;
+    gap: 25px;
+    transition: all 1s;
+}
+
+.wrap-img {
+    display: flex;
+    gap: 25px;
+}
+
+.arrow-left,
+.arrow-right,
+.about-button {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.arrow-left.invis {
+    opacity: 0.5px;
+}
+
+.about-button {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 42px;
+
+}
+
+
+
+.about-button-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    width: 26px;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: #0C0C0E;
+    transition: all 0.5s ease 0s;
+}
+
+
+
+.about-button-wrap:hover {
+    cursor: pointer;
+    background-color: #BB945F;
+    border-color: #BB945F;
+    transition: all 0.5s ease 0s;
+}
+
+.about-button-wrap.last {
+    opacity: 0.5;
+}
+
+.about-button-wrap.active {
+    background-color: #BB945F;
+    border-color: #BB945F;
+    cursor: default;
+}
+
+.favorites {
+    padding: 0 20px;
+}
+
+.favorites-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.favorites-p {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 40px;
+}
+
+.favorites-input {
+    display: flex;
+    max-width: 700px;
+    height: 24px;
+    align-items: center;
+    gap: 94px;
+    margin-top: 2px;
+}
+
+.label-wraper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.input-wraper {
+    display: flex;
+    outline-color: black;
+    outline-width: 1px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    outline-style: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.favorites-inp {
+    width: 17px;
+    height: 17px;
+    accent-color: black;
+    margin: 0;
+    cursor: pointer;
+}
+
+.favorites-label {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+.active-input {
+    font-weight: 700;
+}
+
+.cardContainer {
+    position: relative;
+    width: 1400px;
+    height: 1150px;
+    margin-top: 38px;
+}
+
+.card-wrap {
+    width: 1400px;
+    height: 1150px;
+    display: grid;
+    grid-template-columns: repeat(2, 590px);
+    justify-content: space-between;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease 0s, top 0.5s ease 0s;
+    z-index: -1;
+}
+
+.card-visible {
+    z-index: 10;
+}
+
+.card-invisible {
+    /* display: none; */
+    z-index: -1;
+}
+
+.card {
+    position: relative;
+    width: 590px;
+    height: 555px;
+    background: #FFF;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.card-text {
+    width: 550px;
+    min-height: 555px;
+    border: 1px solid #000;
+    padding: 15px 0 15px 20px;
+}
+
+.card-caption {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-family: 'Forum';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.card-caption::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 60px;
+    height: 1px;
+    background: #BB945F;
+}
+
+.book-title {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.book-author {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.book-annotation {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 355px;
+    height: 335px;
+    margin-top: 20px;
+}
+
+.book-buy {
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .5s;
+    background: #FFF
+}
+
+.book-buy:hover {
+    background-color: #BB945F;
+    border: 1px solid #BB945F;
+    transition: all 0.5s ease 0s;
+}
+
+.book {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 255px;
+    left: 390px;
+}
+
+.book-buy-own {
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    color: #BB945F;
+    border: 1px solid #BB945F;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.coffee {
+    margin-top: 60px;
+    padding: 0 20px 0 20px;
+}
+
+.coffee-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffee-text {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.drink {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+}
+
+.desserts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -4px;
+}
+
+.drink-title,
+.desserts-title {
+    color: #BB945F;
+    font-family: 'Forum';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.desserts-menu-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.drink-name,
+.drink-price,
+.desserts-name,
+.desserts-price {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+.drink-name {
+    width: 200px;
+}
+
+.desserts-name {
+    margin-right: 61px;
+}
+
+.desserts-price {
+    margin-left: 51px;
+    margin-right: -4px;
+}
+
+.menu-line {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 51px;
+}
+
+.menu-line-dessert {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin-top: 38px;
+}
+
+.contacts {
+    padding: 0 20px;
+}
+
+.contacts-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.contacts-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-header,
+.contacts-title-staff {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.contacts-title-staff {
+    margin-top: 19px;
+}
+
+.email-adsress {
+    margin-top: -20px;
+}
+
+.contacts-phone {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.contact-span {
+    font-weight: 700;
+}
+
+.map {
+    width: 686px;
+    height: 413px;
+}
+
+.library {
+    padding: 0 20px 0 20px;
+    margin: 60px 0 40px 0;
+}
+
+.library-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.library-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-library {
+    width: 600px;
+    height: 453px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrap {
+    display: flex;
+    width: 600px;
+    height: 386px;
+    border: 3px solid #BB945F;
+    background: #FFF;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-brown-color {
+    width: 560px;
+    height: 272px;
+    background: #BB945F;
+    padding: 20px 0 25px 20px;
+    margin: 20px;
+
+}
+
+.form-header {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 30px;
+}
+
+.form-title {
+    color: #000;
+    font-family: 'Forum';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+}
+
+.library-input {
+    width: 520px;
+    height: 66px;
+    border-radius: 10px;
+    background: #FFF;
+    border: 1px solid #BB945F;
+    margin-bottom: 25px;
+    cursor: auto;
+    color: #BB945F;
+    font-family: 'Forum';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    padding-left: 20px;
+
+}
+
+::placeholder {
+    color: #8E8E8E;
+    font-family: 'Forum';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    padding: 8px 318px 8px 20px;
+}
+
+.library-button {
+    display: inline-flex;
+    padding: 8px 40px;
+    align-items: flex-end;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    background: #FFF;
+}
+
+.library-button:hover {
+    background-color: #BB945F;
+    border: 1px solid #BB945F;
+    transition: all 0.5s ease 0s;
+}
+
+.registartion,
+.labrary-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.registartion-title {
+    color: #000;
+    text-align: center;
+    font-family: 'Forum';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 35px;
+}
+
+.registartion-text {
+    max-width: 456px;
+    color: #000;
+    text-align: right;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    margin-bottom: 37px;
+}
+
+.library-sign,
+.library-log,
+.library-profile-btn {
+    display: flex;
+    width: 75px;
+    height: 30px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    background: #FFF;
+}
+
+.registration-button {
+    display: flex;
+    gap: 20px;
+}
+
+.library-sign:hover,
+.library-log:hover {
+    background-color: #BB945F;
+    border: 1px solid #BB945F;
+    transition: all 0.5s ease 0s;
+}
+
+.footer {
+    background-color: #0C0C0E;
+    height: 250px;
+    padding: 22px 20px 44px 19px;
+}
+
+.footer-address {
+    display: inline-block;
+    width: 229px;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer-line {
+    height: 1px;
+    background: #FFF;
+}
+
+.footer-time,
+.footer-time-2 {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+}
+
+.footer-time-2 {
+    margin-top: 10px;
+}
+
+.footer-git {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.footer-link {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.date {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.social-wrap {
+    display: flex;
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.footer-address:hover {
+    color: #BB945F;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.social-icon {
+    color: #F5EFDB;
+}
+
+.social-icon:hover {
+    color: #BB945F;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.footer-link:hover {
+    color: #BB945F;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.footer-git:hover {
+    color: #BB945F;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 150px;
+}
+
+.footer-bottom {
+    margin-top: 35px;
+}
+
+.footer-wrap-git {
+    text-align: right;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Modal window */
+
+
+.burger-button {
+    display: none;
+    position: relative;
+    width: 45px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.burger-button:hover {
+    color: #BB945F;
+    transition: all 0.5s ease 0s;
+}
+
+.burger-button span:hover {
+    color: #BB945F;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.burger-button span {
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    margin-left: 12px;
+    margin-top: 4px;
+    background-color: #FFFFFF;
+    transition: background-color.3s, opacity .25s, transform .5s;
+}
+
+
+
+.burger-button span:nth-child(1) {
+    background-color: #FFFFFF;
+    transform: translateY(-10px);
+}
+
+.burger-button span:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.burger-button span:nth-child(3) {
+    background-color: #FFFFFF;
+    transform: translateY(10px);
+}
+
+.header.open .burger-button span:nth-child(1) {
+    background-color: #FFFFFF;
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .burger-button span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .burger-button span:nth-child(3) {
+    background-color: #FFFFFF;
+    transform: translateY(0) rotate(-45deg);
+}
+
+.hide-menu {
+    display: flex;
+    gap: 30px;
+}
+
+
+.invisible {
+    display: none;
+}
+
+/* Modal log in and registration */
+.authorization {
+    width: 80px;
+    height: 115px;
+    background: #FFF;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 59px;
+    right: 20px;
+}
+
+.authorization-title {
+    position: relative;
+    color: #000;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.authorization-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 4px;
+    width: 40px;
+    height: 1px;
+    background: #BB945F;
+}
+
+.authorization-logIn {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: transparent;
+    border: transparent;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.authorization-register {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: transparent;
+    border: transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.authorization.act,
+.myProfile-window.act,
+.labrary-profile.act,
+.myProfile-window-footer.act,
+.login-window.act,
+.myProfile-view.act {
+    display: flex;
+}
+
+/* Register Modal Window*/
+.registerModal {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-content {
+    position: fixed;
+    top: 20vh;
+    left: 43%;
+    background: #FFF;
+    padding-left: 25px;
+    width: 250px;
+    height: 382px;
+}
+
+.register-titel {
+    color: #000;
+    text-align: center;
+    font-family: 'Forum';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.close,
+.login-close {
+    color: #0C0C0E;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-top: 7px;
+    margin-right: 17px;
+}
+
+.registrationForm,
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-lable,
+.login-lable {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    align-self: baseline;
+    margin-bottom: 10px;
+}
+
+.register-input,
+.login-input {
+    width: 200px;
+    height: 20px;
+    flex-shrink: 0;
+    border: 1px solid #BB945F;
+    margin-bottom: 10px;
+}
+
+.register-button,
+.login-button {
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 10px
+}
+
+.register-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.register-text {
+    color: #000;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 10px;
+
+}
+
+.register-log,
+.login-log {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+/*New button*/
+.my-div-class {
+    background-color: white;
+    color: rgb(187, 148, 95);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+    z-index: 10;
+    margin-right: -11px;
+}
+
+/*My profil modal window*/
+.myProfile-window {
+    width: 80px;
+    height: 115px;
+    background: #FFF;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 59px;
+    right: 17px;
+}
+
+.myProfile-number {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.myProfile-number::after {
+    content: '';
+    position: absolute;
+    bottom: 86px;
+    left: 22px;
+    width: 40px;
+    height: 1px;
+    background: #BB945F;
+}
+
+.myProfile-btn,
+.myProfile-log {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: transparent;
+    border: transparent;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.labrary-profile {
+    display: none;
+}
+
+.myProfile-window-footer {
+    width: 169px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    height: 52px;
+}
+
+.visit-text,
+.visit-counter,
+.bonuses-text,
+.little-books-text,
+.books-counter,
+.book-counter {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+}
+
+.visit,
+.bonuses,
+.little-books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+/*LOGIN MODAL WINDOW*/
+.login-window {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-window-content {
+    width: 250px;
+    height: 262px;
+    position: fixed;
+    top: 20vh;
+    left: 43%;
+    background: #FFF;
+    padding-left: 25px;
+}
+
+/*Buy Card*/
+.buy-card-wrap {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-card {
+    width: 640px;
+    height: 540px;
+    background: #FFF;
+    position: fixed;
+    top: 10vh;
+    left: 25%;
+}
+
+.buy-card-heder {
+    width: 640px;
+    height: 60px;
+    background: #0C0C0E;
+    display: flex;
+    align-items: center;
+    padding-left: 143px;
+}
+
+.buy-card-title {
+    width: 364px;
+    margin-right: 103px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Forum';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.buy-card-content {
+    display: flex;
+    gap: 40px;
+    padding: 30px 40px 40px 40px;
+}
+
+.buy-card-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.buy-card-label {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+.buy-card-input {
+    width: 200px;
+    height: 20px;
+    flex-shrink: 0;
+    border: 1px solid #BB945F;
+    color: #BB945F;
+    margin-bottom: 10px;
+}
+
+.content-right {
+    color: #8E8E8E;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.buy-card-button {
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.buy-card-button:disabled,
+.book-buy:disabled {
+    opacity: 0.5;
+}
+
+.buy-card-price {
+    color: #0C0C0E;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.expiration {
+    display: flex;
+    gap: 10px;
+}
+
+.small-size {
+    width: 45px;
+    height: 20px;
+}
+
+.buy-card-footer {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.buy-card-input::placeholder {
+    font-size: 15px;
+    font-style: normal
+}
+
+/*My profil*/
+.myProfile-view {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.myProfile-view-content {
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: fixed;
+    top: 20vh;
+    display: flex;
+    gap: 20px;
+}
+
+.myProfile-view-left {
+    width: 170px;
+    height: 403px;
+    background: #0C0C0E;
+    padding: 140px 45px 15px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.short-name {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background: #FFF;
+    color: #BB945F;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-name {
+    display: flex;
+    width: 120px;
+    min-height: 30px;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.view-right-head {
+    display: flex;
+    margin-top: 40px;
+    gap: 163px;
+}
+
+.view-right-title {
+    color: #000;
+    text-align: center;
+    font-family: 'Forum';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.view-right-close {
+    margin-top: -17px;
+}
+
+.myProfile-view-footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.visit-view,
+.bonuses-view,
+.little-books-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.visit-text-view,
+.bonuses-text-view,
+.little-books-text-view {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.view-right-rented {
+    width: 350px;
+    height: 100px;
+    overflow: auto;
+}
+
+.view-right-rented-title {
+    color: #0C0C0E;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: inherit;
+    margin-top: 17px;
+}
+
+.view-right-ul {
+    list-style: disc;
+}
+
+.view-right-li {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.view-right-li-start {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.view-footer {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.view-right-card {
+    color: #0C0C0E;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.view-right-cardNum {
+    color: #BB945F;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.visit-counter-view {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+}
+
+.view-right-close {
+    cursor: pointer;
+}
+
+.book-buy:disabled:hover {
+    background-color: transparent;
+    border: 1px solid #0C0C0E;
+}
+
+.copyText {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+
+}
